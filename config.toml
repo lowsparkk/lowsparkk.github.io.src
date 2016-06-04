@@ -1,0 +1,80 @@
+# hostname (and path) to the root eg. http://spf13.com/
+baseurl = "/"
+
+# Site title
+title = "Lowsparkk Labs"
+
+# Copyright
+copyright = "(c) 2016 Low Sparkk."
+
+# Language
+languageCode = "en-EN"
+
+# "yaml", "toml", "json"
+metaDataFormat = "yaml"
+
+# theme to use (located in /themes/THEMENAME/)
+theme = "hyde-y"
+
+# pagination
+paginate = 10
+paginatePath = "page"
+
+truncate = true
+
+# Enable Disqus integration
+disqusShortname = "lowsparkk"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+    code = "/:slug/"
+
+[taxonomies]
+    tag = "tags"
+    topic = "topics"
+
+[author]
+    name = "Low Sparkk"
+    email = "low.sparkk@yahoo.com"
+
+#
+# All parameters below here are optional and can be mixed and matched.
+#
+[params]
+    # You can use markdown here.
+    brand = "Lowsparkk Labs"
+    topline = "Yet Another Coding Blog"
+
+    # Sidebar position
+    # false, true, "left", "right"
+    sidebar = "left"
+
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Home".
+    home = "Home"
+
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = "solarized_light"
+
+    # Google Analytics.
+    googleAnalytics = ""
+
+    # Sidebar social links.
+    github = "lowsparkk" # Your Github profile ID
+    bitbucket = "lowsparkk" # Your Bitbucket profile ID
+    linkedin = "" # Your LinkedIn profile ID (from public URL)
+    googleplus = "" # Your Google+ profile ID
+    facebook = "" # Your Facebook profile ID
+    twitter = "" # Your Twitter profile ID
+    youtube = ""  # Your Youtube channel ID
+    flattr = ""  # populate with your flattr uid
+
+[blackfriday]
+    angledQuotes = true
+    fractions = false
+    hrefTargetBlank = false
+    latexDashes = true
+    plainIdAnchors = true
+    extensions = []
+    extensionmask = []
